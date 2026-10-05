@@ -135,6 +135,16 @@ or with arguments:
 :FzfLua files cwd=~/.config
 ```
 
+or via a custom keymap:
+
+```lua
+require("fzf-lua")
+
+vim.keymap.set("n", "<leader>ff", function()
+    FzfLua.files()
+end)
+```
+
 ### Resume
 
 Resuming work from where you left off is as easy as:
